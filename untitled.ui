@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1179</width>
+                <height>781</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>MainWindow</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <widget class="QWidget" name="verticalLayoutWidget_4">
+                <property name="geometry">
+                    <rect>
+                        <x>70</x>
+                        <y>75</y>
+                        <width>1031</width>
+                        <height>631</height>
+                    </rect>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                    <item>
+                        <layout class="QHBoxLayout" name="light_all" stretch="2,5,3,5,3,1,1">
+                            <item>
+                                <widget class="QLabel" name="light_4">
+                                    <property name="text">
+                                        <string>灯</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="PlotWidget" name="light_v">
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="light_v_propertites_6">
+                                    <item>
+                                        <layout class="QHBoxLayout" name="warn_min_6">
+                                            <item>
+                                                <widget class="QLabel" name="warn_min_label_6">
+                                                    <property name="text">
+                                                        <string>预警最小值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="light_warn_min_value">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>180</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_6">
+                                            <item>
+                                                <widget class="QLabel" name="label_6">
+                                                    <property name="text">
+                                                        <string>预警最大值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="light_warn_max_value">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>240</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="light_v_setting">
+                                            <property name="text">
+                                                <string>设置</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <widget class="PlotWidget" name="light_a">
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="light_a_propertites_3">
+                                    <item>
+                                        <layout class="QVBoxLayout" name="light_v_propertites_7">
+                                            <item>
+                                                <layout class="QHBoxLayout" name="warn_min_7">
+                                                    <item>
+                                                        <widget class="QLabel" name="warn_min_label_7">
+                                                            <property name="text">
+                                                                <string>预警最小值</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QSpinBox" name="light_warn_min_value_a">
+                                                            <property name="maximum">
+                                                                <number>1024</number>
+                                                            </property>
+                                                            <property name="value">
+                                                                <number>0</number>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                                                    <item>
+                                                        <widget class="QLabel" name="label_7">
+                                                            <property name="text">
+                                                                <string>预警最大值</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QSpinBox" name="light_warn_max_value_a">
+                                                            <property name="maximum">
+                                                                <number>1024</number>
+                                                            </property>
+                                                            <property name="value">
+                                                                <number>10</number>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <widget class="QPushButton" name="light_a_setting">
+                                                    <property name="text">
+                                                        <string>设置</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_2">
+                                    <item>
+                                        <widget class="Led" name="pushButton">
+                                            <property name="text">
+                                                <string/>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="Led" name="pushButton_2">
+                                            <property name="text">
+                                                <string/>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_7">
+                                    <item>
+                                        <widget class="QLabel" name="label_15">
+                                            <property name="text">
+                                                <string>电压</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="label_16">
+                                            <property name="text">
+                                                <string>电流</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </item>
+                    <item>
+                        <layout class="QHBoxLayout" name="data_all" stretch="2,5,3,5,3,1,1">
+                            <item>
+                                <widget class="QLabel" name="data">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="text">
+                                        <string>数据流</string>
+                                    </property>
+                                    <property name="alignment">
+                                        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="PlotWidget" name="data_v">
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="light_v_propertites">
+                                    <item>
+                                        <layout class="QHBoxLayout" name="warn_min">
+                                            <item>
+                                                <widget class="QLabel" name="warn_min_label">
+                                                    <property name="text">
+                                                        <string>预警最小值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="data_warn_min_value">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>180</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout">
+                                            <item>
+                                                <widget class="QLabel" name="label">
+                                                    <property name="text">
+                                                        <string>预警最大值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="data_warn_max_value">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>240</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="data_v_setting">
+                                            <property name="text">
+                                                <string>设置</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <widget class="PlotWidget" name="data_a">
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="light_a_propertites">
+                                    <item>
+                                        <layout class="QVBoxLayout" name="light_v_propertites_3">
+                                            <item>
+                                                <layout class="QHBoxLayout" name="warn_min_3">
+                                                    <item>
+                                                        <widget class="QLabel" name="warn_min_label_3">
+                                                            <property name="text">
+                                                                <string>预警最小值</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QSpinBox" name="data_warn_min_value_a">
+                                                            <property name="maximum">
+                                                                <number>1024</number>
+                                                            </property>
+                                                            <property name="value">
+                                                                <number>0</number>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                                                    <item>
+                                                        <widget class="QLabel" name="label_3">
+                                                            <property name="text">
+                                                                <string>预警最大值</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QSpinBox" name="data_warn_max_value_a">
+                                                            <property name="maximum">
+                                                                <number>1024</number>
+                                                            </property>
+                                                            <property name="value">
+                                                                <number>10</number>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <widget class="QPushButton" name="data_a_setting">
+                                                    <property name="text">
+                                                        <string>设置</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_3">
+                                    <item>
+                                        <widget class="Led" name="pushButton_3">
+                                            <property name="text">
+                                                <string/>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="Led" name="pushButton_4">
+                                            <property name="text">
+                                                <string/>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_4">
+                                    <item>
+                                        <widget class="QLabel" name="label_12">
+                                            <property name="text">
+                                                <string>电压</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="label_14">
+                                            <property name="text">
+                                                <string>电流</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </item>
+                    <item>
+                        <layout class="QHBoxLayout" name="light_all_6" stretch="2,13,3,2">
+                            <item>
+                                <spacer name="horizontalSpacer">
+                                    <property name="orientation">
+                                        <enum>Qt::Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>QSizePolicy::Minimum</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>40</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                            <item>
+                                <widget class="PlotWidget" name="data_bit">
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="light_v_propertites_5">
+                                    <item>
+                                        <layout class="QHBoxLayout" name="warn_min_5">
+                                            <item>
+                                                <widget class="QLabel" name="warn_min_label_5">
+                                                    <property name="text">
+                                                        <string>预警最小值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="data_warn_min_value_a_3">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>0</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_5">
+                                            <item>
+                                                <widget class="QLabel" name="label_5">
+                                                    <property name="text">
+                                                        <string>预警最大值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="data_warn_max_value_a_3">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>10</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="data_a_setting_3">
+                                            <property name="text">
+                                                <string>设置</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_8">
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_12">
+                                            <item>
+                                                <widget class="Led" name="pushButton_10">
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                                                            <horstretch>0</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string/>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                                                <widget class="QLabel" name="label_2">
+                                                    <property name="text">
+                                                        <string>数据
+                                                            位
+                                                        </string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </item>
+                    <item>
+                        <layout class="QHBoxLayout" name="control_all" stretch="2,5,3,5,3,1,1">
+                            <item>
+                                <widget class="QLabel" name="control">
+                                    <property name="text">
+                                        <string>微控制器</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="PlotWidget" name="control_v">
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="light_v_propertites_8">
+                                    <item>
+                                        <layout class="QHBoxLayout" name="warn_min_8">
+                                            <item>
+                                                <widget class="QLabel" name="warn_min_label_8">
+                                                    <property name="text">
+                                                        <string>预警最小值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="control_warn_min_value_v">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>180</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_8">
+                                            <item>
+                                                <widget class="QLabel" name="label_8">
+                                                    <property name="text">
+                                                        <string>预警最大值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="control_warn_max_value_v">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>240</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="control_v_setting">
+                                            <property name="text">
+                                                <string>设置</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <widget class="PlotWidget" name="control_a">
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="light_a_propertites_4">
+                                    <item>
+                                        <layout class="QVBoxLayout" name="light_v_propertites_9">
+                                            <item>
+                                                <layout class="QHBoxLayout" name="warn_min_9">
+                                                    <item>
+                                                        <widget class="QLabel" name="warn_min_label_9">
+                                                            <property name="text">
+                                                                <string>预警最小值</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QSpinBox" name="control_warn_min_value_a">
+                                                            <property name="maximum">
+                                                                <number>1024</number>
+                                                            </property>
+                                                            <property name="value">
+                                                                <number>0</number>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                                                    <item>
+                                                        <widget class="QLabel" name="label_9">
+                                                            <property name="text">
+                                                                <string>预警最大值</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QSpinBox" name="control_warn_max_value_a">
+                                                            <property name="maximum">
+                                                                <number>1024</number>
+                                                            </property>
+                                                            <property name="value">
+                                                                <number>10</number>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <widget class="QPushButton" name="control_a_setting">
+                                                    <property name="text">
+                                                        <string>设置</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_5">
+                                    <item>
+                                        <widget class="Led" name="pushButton_5">
+                                            <property name="text">
+                                                <string/>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="Led" name="pushButton_6">
+                                            <property name="text">
+                                                <string/>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_9">
+                                    <item>
+                                        <widget class="QLabel" name="label_17">
+                                            <property name="text">
+                                                <string>电压</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="label_18">
+                                            <property name="text">
+                                                <string>电流</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </item>
+                    <item>
+                        <layout class="QHBoxLayout" name="led_all" stretch="2,5,3,5,3,1,1">
+                            <item>
+                                <widget class="QLabel" name="led">
+                                    <property name="text">
+                                        <string>光传感器</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget class="PlotWidget" name="ledt_v">
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="light_v_propertites_10">
+                                    <item>
+                                        <layout class="QHBoxLayout" name="warn_min_10">
+                                            <item>
+                                                <widget class="QLabel" name="warn_min_label_10">
+                                                    <property name="text">
+                                                        <string>预警最小值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="led_warn_min_value_v">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>180</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <layout class="QHBoxLayout" name="horizontalLayout_10">
+                                            <item>
+                                                <widget class="QLabel" name="label_10">
+                                                    <property name="text">
+                                                        <string>预警最大值</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QSpinBox" name="led_warn_max_value">
+                                                    <property name="maximum">
+                                                        <number>1024</number>
+                                                    </property>
+                                                    <property name="value">
+                                                        <number>240</number>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="led_v_setting">
+                                            <property name="text">
+                                                <string>设置</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <widget class="PlotWidget" name="led_a">
+                                    <property name="frameShape">
+                                        <enum>QFrame::StyledPanel</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Raised</enum>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="light_a_propertites_5">
+                                    <item>
+                                        <layout class="QVBoxLayout" name="light_v_propertites_11">
+                                            <item>
+                                                <layout class="QHBoxLayout" name="warn_min_11">
+                                                    <item>
+                                                        <widget class="QLabel" name="warn_min_label_11">
+                                                            <property name="text">
+                                                                <string>预警最小值</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QSpinBox" name="led_warn_min_value_a">
+                                                            <property name="maximum">
+                                                                <number>1024</number>
+                                                            </property>
+                                                            <property name="value">
+                                                                <number>0</number>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <layout class="QHBoxLayout" name="horizontalLayout_11">
+                                                    <item>
+                                                        <widget class="QLabel" name="label_11">
+                                                            <property name="text">
+                                                                <string>预警最大值</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QSpinBox" name="led_warn_max_value_a">
+                                                            <property name="maximum">
+                                                                <number>1024</number>
+                                                            </property>
+                                                            <property name="value">
+                                                                <number>10</number>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item>
+                                                <widget class="QPushButton" name="led_a_setting">
+                                                    <property name="text">
+                                                        <string>设置</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_6">
+                                    <item>
+                                        <widget class="Led" name="pushButton_7">
+                                            <property name="text">
+                                                <string/>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="Led" name="pushButton_8">
+                                            <property name="text">
+                                                <string/>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item>
+                                <layout class="QVBoxLayout" name="verticalLayout_10">
+                                    <item>
+                                        <widget class="QLabel" name="label_19">
+                                            <property name="text">
+                                                <string>电压</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLabel" name="label_20">
+                                            <property name="text">
+                                                <string>电流</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </item>
+                </layout>
+            </widget>
+            <widget class="QLabel" name="label_13">
+                <property name="geometry">
+                    <rect>
+                        <x>1000</x>
+                        <y>40</y>
+                        <width>101</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>警报</string>
+                </property>
+            </widget>
+            <widget class="Line" name="line">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>70</y>
+                        <width>1041</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_2">
+                <property name="geometry">
+                    <rect>
+                        <x>50</x>
+                        <y>80</y>
+                        <width>20</width>
+                        <height>631</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_3">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>700</y>
+                        <width>1041</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_4">
+                <property name="geometry">
+                    <rect>
+                        <x>1090</x>
+                        <y>80</y>
+                        <width>20</width>
+                        <height>631</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_5">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>190</y>
+                        <width>1041</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_6">
+                <property name="geometry">
+                    <rect>
+                        <x>60</x>
+                        <y>450</y>
+                        <width>1041</width>
+                        <height>16</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_7">
+                <property name="geometry">
+                    <rect>
+                        <x>400</x>
+                        <y>80</y>
+                        <width>51</width>
+                        <height>241</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_9">
+                <property name="geometry">
+                    <rect>
+                        <x>810</x>
+                        <y>80</y>
+                        <width>51</width>
+                        <height>631</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_10">
+                <property name="geometry">
+                    <rect>
+                        <x>980</x>
+                        <y>80</y>
+                        <width>21</width>
+                        <height>631</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_11">
+                <property name="geometry">
+                    <rect>
+                        <x>420</x>
+                        <y>309</y>
+                        <width>161</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_12">
+                <property name="geometry">
+                    <rect>
+                        <x>830</x>
+                        <y>310</y>
+                        <width>271</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_13">
+                <property name="geometry">
+                    <rect>
+                        <x>57</x>
+                        <y>569</y>
+                        <width>1041</width>
+                        <height>31</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_14">
+                <property name="geometry">
+                    <rect>
+                        <x>400</x>
+                        <y>460</y>
+                        <width>51</width>
+                        <height>251</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_15">
+                <property name="geometry">
+                    <rect>
+                        <x>550</x>
+                        <y>460</y>
+                        <width>61</width>
+                        <height>251</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+            <widget class="Line" name="line_8">
+                <property name="geometry">
+                    <rect>
+                        <x>570</x>
+                        <y>80</y>
+                        <width>20</width>
+                        <height>241</height>
+                    </rect>
+                </property>
+                <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <customwidgets>
+        <customwidget>
+            <class>PlotWidget</class>
+            <extends>QFrame</extends>
+            <header location="global">pyqtgraph</header>
+            <container>1</container>
+        </customwidget>
+        <customwidget>
+            <class>Led</class>
+            <extends>QPushButton</extends>
+            <header location="global">pyqt_led</header>
+        </customwidget>
+    </customwidgets>
+    <resources/>
+    <connections/>
+</ui>
